@@ -5,8 +5,180 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Page</title>
+  <style>
+    * {box-sizing: border-box;}
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #009fc7;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+
+    .content-area {
+      max-width: 1180px;
+      width: calc(100% - 14rem);
+      margin: 0 auto;
+      padding: 2rem;
+      /*padding: 5rem;*/
+      /*padding-top: 2rem;*/
+    }
+
+    @media screen and (max-width: 700px) {
+      .content-area {
+        width: calc(100% - 2rem);
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .content-area {
+        width: calc(100% - 1rem);
+      }
+    }
+
+    .para-title {
+      font-size: 1rem;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #333940;
+    }
+
+    .para-content {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #333940;
+    }
+
+    .para-content-questions {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #333940;
+    }
+  </style>
 </head>
 <body>
-<h3> Hello Welcome to my Page</h3>
+<div class="header">
+  <a href="https://www.mrcooper.com/" class="logo" target="_blank"><img src="./logo_white.svg"/></a>
+</div>
+<div class="content-area">
+  <p class="para-title">Notice of Cyber Security Incident</p>
+  <p class="para-content">
+    On October 31, 2023, Mr. Cooper became the target of a cyber security incident and took immediate steps to lock down our systems in order to keep your data safe. We are working to resolve the issue as quickly as possible.
+    <br/>
+    <br/>
+    Rest assured, you will not incur any fees, penalties or negative credit reporting related to late payments as we work to fix this issue.
+    <br/>
+    <br/>
+    For updated information, we encourage you to continue to visit this webpage and the FAQs section below.
+    <br/>
+    <br/>
+    We value you as our customer and are truly sorry for any inconvenience or concern this incident may have caused.
+    <br/>
+    <br/>
+  </p>
+
+  <p class="para-title">Frequently Asked Questions:</p>
+  <p class="para-content-questions">
+    <b>Q: What happened?</b>
+    <br/>
+    A: On October 31, 2023, Mr. Cooper determined that the company had experienced a cybersecurity
+    incident in which an unauthorized third party gained access to certain technology systems. Following
+    detection of the incident, we initiated response protocols, including deploying containment measures to
+    protect systems and data and shut down certain systems as a precautionary measure. An investigation
+    has been launched, and we are working to resolve the issue as quickly as possible.
+  </p>
+
+  <p class="para-content-questions">
+    <b>Q: Was customer data breached as part of this incident? How will I know if my data was impacted?</b>
+    <br/>
+    A: We are actively investigating this event to determine if any data has been compromised. If customers
+    are impacted, they will be notified and provided with identity protection services.
+  </p>
+
+  <p class="para-content-questions">
+    <b>Q: What is Mr. Cooper doing to protect me?</b>
+    <br/>
+    A: We value our customers and take their data privacy very seriously. Following detection of the
+    incident, we immediately initiated response protocols, including deploying containment measures to
+    protect systems and customer data and shut down certain systems as a precautionary measure.
+  </p>
+
+  <p class="para-content-questions">
+    <b>Q: When will Mr. Cooper return to normal operations?</b>
+    <br/>
+    A: We understand how important it is that you be able to access our systems, and we are actively
+    working to resolve the issue and restore our systems as soon as possible. Rest assured, you will not be
+    you will not incur any fees, penalties or negative credit reporting related to late payments as
+    we work to fix this issue.
+  </p>
+
+  <p class="para-content-questions">
+    <b>Q: How do I make a payment while the system is down?</b>
+    <br/>
+    A: While the system is down, we are not able to process your payment. If you use ACH, your
+    payment will be processed as soon as our systems are operational and you will receive a
+    notification. You do not need to do anything. If you use any other method of payment, you will
+    be able to do so as soon as we resolve this issue. Rest assured, you will not be you will not incur
+    any fees, penalties or negative credit reporting related to late payments as we work to fix this
+    issue.
+  </p>
+
+  <p class="para-content-questions">
+    <b>Q: I’m a newly transferred customer. How will this impact me?</b>
+    <br/>
+    A: First, welcome to Mr. Cooper. We are happy to have you. The mortgage transfer process can be
+    stressful at any time, and it’s our goal to make it as seamless as possible. Unfortunately, this incident
+    may impact when you are able to access your account information for the first time. We are grateful for
+    your patience and will keep you updated with new information as it becomes available.
+  </p>
+</div>
 </body>
 </html>
