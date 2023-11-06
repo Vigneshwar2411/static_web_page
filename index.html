@@ -1,207 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mr. Cooper - Your Home Loans & Refinance Partner</title>
-  <style>
-    * {box-sizing: border-box;}
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mr. Cooper - Your Home Loans & Refinance Partner</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+            html {
+                scroll-behavior: smooth;
+            }
 
-    .header {
-      overflow: hidden;
-      background-color: #009fc7;
-      padding: 20px 10px;
-    }
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-    .header a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 4px;
-    }
+            .header {
+                overflow: hidden;
+                background-color: #009fc7;
+                padding: 20px 10px;
+            }
 
-    .header a.logo {
-      font-size: 25px;
-      font-weight: bold;
-    }
+            .header a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 25px;
+                border-radius: 4px;
+            }
 
-    .header a.active {
-      background-color: dodgerblue;
-      color: white;
-    }
+            .header a.logo {
+                font-size: 25px;
+                font-weight: bold;
+            }
 
-    .header-right {
-      float: right;
-    }
+            .header a.active {
+                background-color: dodgerblue;
+                color: white;
+            }
 
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
+            .header-right {
+                float: right;
+            }
 
-      .header-right {
-        float: none;
-      }
-    }
+            @media screen and (max-width: 500px) {
+                .header a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
 
-    .content-area {
-      max-width: 1180px;
-      width: calc(100% - 14rem);
-      margin: 0 auto;
-      padding: 2rem;
-      /*padding: 5rem;*/
-      /*padding-top: 2rem;*/
-    }
+                .header-right {
+                    float: none;
+                }
+            }
 
-    @media screen and (max-width: 700px) {
-      .content-area {
-        width: calc(100% - 2rem);
-      }
-    }
+            .content-area {
+                max-width: 1180px;
+                width: calc(100% - 14rem);
+                margin: 0 auto;
+                padding: 2rem;
+                /*padding: 5rem;*/
+                /*padding-top: 2rem;*/
+            }
 
-    @media screen and (max-width: 500px) {
-      .content-area {
-        width: calc(100% - 1rem);
-      }
-    }
+            @media screen and (max-width: 700px) {
+                .content-area {
+                    width: calc(100% - 2rem);
+                }
+            }
 
-    .para-title {
-      font-size: 1rem;
-      font-weight: 900;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #333940;
-    }
+            @media screen and (max-width: 500px) {
+                .content-area {
+                    width: calc(100% - 1rem);
+                }
+            }
 
-    .para-content {
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      color: #333940;
-    }
+            .para-title {
+                font-size: 1rem;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #333940;
+            }
 
-    .para-content-questions {
-      font-size: 16px;
-      font-weight: normal;
-      line-height: 1.5;
-      letter-spacing: normal;
-      color: #333940;
-    }
-  </style>
-</head>
-<body>
-<div class="header">
-  <a href="#" class="logo"><img src="./logo_white.svg"/></a>
-</div>
-<div class="content-area">
-  <p class="para-title">
-    Notice of Cyber Security Incident
-    <br/>
-    <i>As of Nov. 3 at 5pm</i>
-  </p>
-  <p class="para-content">
-    On October 31, Mr. Cooper became the target of a cyber security incident and took immediate steps to lock down our systems in order to keep your data safe. Our systems remain locked down, and we are working on a resolution as quickly as possible.
-    <br/>
-    <br/>
-    Rest assured, you will not incur any fees, penalties or negative credit reporting related to late payments as we work to fix this issue.
-    <br/>
-    <br/>
-    For updated information, we encourage you to continue to visit this webpage and the FAQs section below.
-    <br/>
-    <br/>
-    We value you as our customer and are truly sorry for any inconvenience or concern this incident may have caused.
-    <br/>
-    <br/>
-  </p>
+            .para-content {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #333940;
+            }
 
-  <p class="para-title">Frequently Asked Questions:</p>
-  <p class="para-content-questions">
-    <b>Q: What happened?</b>
-    <br/>
-    A: On October 31, Mr. Cooper became the target of a cyber security incident and took immediate steps to lock down our systems in order to keep your data safe. Our systems remain locked down, and we are working on a resolution as quickly as possible.
-  </p>
+            .para-content-questions {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #333940;
+            }
 
-  <p class="para-content-questions">
-    <b>Q: Was customer data breached as part of this incident? How will I know if my data was impacted?</b>
-    <br/>
-    A: We are actively investigating this event to determine if any data has been compromised. If customers
-    are impacted, they will be notified and provided with identity protection services.
-  </p>
+            .po-box-format {
+                margin-left: 48px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo"><img src="./logo_white.svg" /></a>
+        </div>
+        <div class="content-area">
+            <p class="para-title">
+                Notice of Cybersecurity Incident
+                <br />
+                <i>As of Nov. 6 at 9:30am</i>
+            </p>
+            <p class="para-content">
+                On October 31, Mr. Cooper became the target of a cybersecurity
+                incident and took immediate steps to lock down our systems in
+                order to keep your data safe. Our systems remain locked down,
+                and we are working on a resolution as quickly as possible.
+                <br />
+                <br />
+                Rest assured, you will not incur any fees, penalties or negative
+                credit reporting related to late payments as we work to fix this
+                issue.
+                <br />
+                <br />
+                However, in an effort to protect systems and customer data,
+                we've temporarily updated our available payment options.
+                <br />
+                <br />
+                We are currently accepting payments from:
+                <br />
+                <ul>
+                    <li>checking accounts;</li>
+                    <li>savings accounts;</li>
+                    <li>money market accounts;</li>
+                    <li>personal checks;</li>
+                    <li>money orders; and</li>
+                    <li>cashier's checks.</li>
+                    <li style="margin-top: 4px; list-style-type: none;"><b><i>Note: Debit cards are only accepted on our automated phone system</i></b></li>
+                </ul>
+                <br />
+                We are currently accepting the following payment types:
+                <br />
+                <ul>
+                    <li><a href="#paying-by-phone">Phone</a></li>
+                    <li><a href="#paying-by-mail">Mail</a></li>
+                    <li><a href="#pay-with-otl">One-Time Web Payment</a></li>
+                    <li><a href="#pay-with-quick-collect">Western Union® Quick Collect®</a></li>
+                    <li><a href="#pay-with-express-pay">MoneyGram® ExpressPayment®</a></li>
+                </ul>
+                <br />
+                For updated information, we encourage you to continue to visit this webpage and the FAQs section below.
+                <br />
+                We value you as our customer and are truly sorry for any inconvenience or concern this incident may have caused.
+                <br />
+                <br />
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: What is Mr. Cooper doing to protect me?</b>
-    <br/>
-    A: We value our customers and take their data privacy very seriously. Following detection of the
-    incident, we immediately initiated response protocols, including deploying containment measures to
-    protect systems and customer data, as well as shut down certain systems as a precautionary measure.
-  </p>
+            <p class="para-title">Frequently Asked Questions:</p>
+            <p class="para-content-questions">
+                <b>Q: What happened?</b>
+                <br />
+                A: On October 31, Mr. Cooper became the target of a cybersecurity
+                incident and took immediate steps to lock down our
+                systems in order to keep your data safe. Our systems remain
+                locked down, and we are working on a resolution as quickly as
+                possible.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: When will Mr. Cooper return to normal operations?</b>
-    <br/>
-    A: We understand how important it is that you be able to access our systems, and we are actively
-    working to resolve the issue and restore our systems as soon as possible. Rest assured, you will not
-    incur any fees, penalties or negative credit reporting related to late payments as
-    we work to fix this issue.
-  </p>
+            <p class="para-content-questions">
+                <b
+                    >Q: Was customer data breached as part of this incident? How
+                    will I know if my data was impacted?</b
+                >
+                <br />
+                A: We are actively investigating this event to determine if any
+                data has been compromised. If customers are impacted, they will
+                be notified and provided with identity protection services.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: How do I make a payment while the system is down?</b>
-    <br/>
-    A: While the system is down, we are not able to process your payment. If you use ACH, your
-    payment will be processed as soon as our systems are operational and you will receive a
-    notification. You do not need to do anything. If you use any other method of payment, you will
-    be able to do so as soon as we resolve this issue. Rest assured, you will not incur any fees,
-    penalties or negative credit reporting related to late payments as we work to fix this issue.
-  </p>
+            <p class="para-content-questions">
+                <b>Q: What is Mr. Cooper doing to protect me?</b>
+                <br />
+                A: We value our customers and take their data privacy very
+                seriously. Following detection of the incident, we immediately
+                initiated response protocols, including deploying containment
+                measures to protect systems and customer data, as well as shut
+                down certain systems as a precautionary measure.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: I’m a newly transferred customer. How will this impact me?</b>
-    <br/>
-    A: First, welcome to Mr. Cooper. We are happy to have you. The mortgage transfer process can be
-    stressful at any time, and it’s our goal to make it as seamless as possible. This incident may impact when
-    you are able to access your account information for the first time. We are grateful for your patience and
-    will keep you updated with new information as it becomes available.
-  </p>
+            <p class="para-content-questions">
+                <b>Q: When will Mr. Cooper return to normal operations?</b>
+                <br />
+                A: We understand how important it is that you be able to access
+                our systems, and we are actively working to resolve the issue
+                and restore our systems as soon as possible. Rest assured, you
+                will not incur any fees, penalties or negative credit reporting
+                related to late payments as we work to fix this issue.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: Will my rate lock be honored?</b>
-    <br/>
-    A: Yes, your rate and fees will not be impacted by this incident.
-  </p>
+            <p class="para-content-questions">
+                <b>Q: How do I make a payment while the system is down?</b>
+                <br />
+                A: In an effort to protect systems and customer data, we've temporarily updated our available payment options.
+                <br />
+                We are currently accepting payments from:
+                <br />
+                We are currently accepting payments from:
+                <br />
+                <ul>
+                    <li>checking accounts;</li>
+                    <li>savings accounts;</li>
+                    <li>money market accounts;</li>
+                    <li>personal checks;</li>
+                    <li>money orders; and</li>
+                    <li>cashier's checks.</li>
+                    <li style="margin-top: 4px; list-style-type: none;"><b><i>Note: Debit cards are only accepted on our automated phone system</i></b></li>
+                </ul>
+                <br />
+                We are currently accepting the following payment types:
+                <br />
+                <ul>
+                    <li><a href="#paying-by-phone">Phone</a></li>
+                    <li><a href="#paying-by-mail">Mail</a></li>
+                    <li><a href="#pay-with-otl">One-Time Web Payment</i></li>
+                    <li><a href="#pay-with-quick-collect">Western Union® Quick Collect®</a></li>
+                    <li><a href="#pay-with-express-pay">MoneyGram® ExpressPayment®</a></li>
+                </ul>
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: When will I close?</b>
-    <br/>
-    A: We understand how important it is that we close your loan on time. We are actively working to resolve the issue and restore our systems as soon as possible. As a reminder, if you are purchasing a home, we will honor our Close On Time Guarantee.
-  </p>
+            <p class="para-content-questions">
+                <b
+                    >Q: I’m a newly transferred customer. How will this impact
+                    me?</b
+                >
+                <br />
+                A: First, welcome to Mr. Cooper. We are happy to have you. The
+                mortgage transfer process can be stressful at any time, and it’s
+                our goal to make it as seamless as possible. This incident may
+                impact when you are able to access your account information for
+                the first time. We are grateful for your patience and will keep
+                you updated with new information as it becomes available.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: I’m working on a refinance, do I need to worry about my loan terms changing</b>
-    <br/>
-    A: This incident will not cause any loan terms to change.
-  </p>
+            <p class="para-content-questions">
+                <b>Q: Will my rate lock be honored?</b>
+                <br />
+                A: Yes, your rate and fees will not be impacted by this
+                incident.
+            </p>
 
-  <p class="para-content-questions">
-    <b>Q: How can I communicate with my Processor or Mortgage Professional?</b>
-    <br/>
-    A: Our secure text messaging platform is the best way to communicate with your loan team at this time.
-  </p>
-</div>
-</body>
+            <p class="para-content-questions">
+                <b>Q: When will I close?</b>
+                <br />
+                A: We understand how important it is that we close your loan on
+                time. We are actively working to resolve the issue and restore
+                our systems as soon as possible. As a reminder, if you are
+                purchasing a home, we will honor our Close On Time Guarantee.
+            </p>
+
+            <p class="para-content-questions">
+                <b
+                    >Q: I’m working on a refinance, do I need to worry about my
+                    loan terms changing</b
+                >
+                <br />
+                A: This incident will not cause any loan terms to change.
+            </p>
+
+            <p class="para-content-questions">
+                <b
+                    >Q: How can I communicate with my Processor or Mortgage
+                    Professional?</b
+                >
+                <br />
+                A: Our secure text messaging platform is the best way to
+                communicate with your loan team at this time.
+            </p>
+            <br />
+            <hr />
+            <br />
+            <b>Payment Options</b>
+            <br />
+            <br />
+            <section id="paying-by-phone">
+                <b>Paying by Phone</b>
+                <br />
+                <br />
+                Call <a href="tel:833-597-8087">833-597-8087</a> to use our automated phone system. Keep in mind that you will need to provide:
+                <br />
+                <ul>
+                    <li>Your loan number</li>
+                    <li>Your ZIP code</li>
+                </ul
+                <br />
+                Types of payments we can take:
+                <ul>
+                    <li>Monthly payment</li>
+                    <li>Principal-only payment</li>
+                    <li>Escrow deposit</li>
+                    <li>Escrow shortage payment</li>
+                </ul>
+                <i>Note: There is no charge for this service</i>
+            </section>
+            <br />
+            <br />
+            <section id="paying-by-mail">
+                <b>Mailing a Payment</b>
+                <br />
+                <br />
+                Here's how and where to make your payment:
+                <ol>
+                    <li>Write a check or get a money order payable to "Mr. Cooper."</li>
+                    <li>Include the detachable coupon from the bottom of your latest monthly statement and your check or money order in a envelope addressed to:</li>
+                </ol>
+                <div class="po-box-format">
+                    <p style="margin: 0;">Mr. Cooper</p>
+                    <p style="margin: 0;">PO Box 650783</p>
+                    <p style="margin: 0;">Dallas, TX 75265</p>
+                </div>
+                <br />
+                Special Posting Instructions:
+                <br />
+                <br />
+                When sending additional funds that require special posting instructions, such as additional principal or fees, please indicate that on your payment coupon.
+                <br />
+                <br />
+                <ul>
+                    <li>If you don't have a payment coupon, please include the posting instructions on a separate note included with your payment.<br /><i>Note: Posting instructions written on the check or other form of payment will not be followed.</i></li>
+                    <br />
+                    <li>If we don't receive posting instructions, or they aren't on a separate note, your payment will be applied according to your payment hierarchy plan.</li>
+                </ul>
+            </section>
+            <br />
+            <br />
+            <section id="pay-with-otl">
+                <b>Paying via One-Time Payment Link</b>
+                <br />
+                <br />
+                Visit our payment website at <a href="https://ipn.paymentus.com/rotp/mrc" target="_blank">https://ipn.paymentus.com/rotp/mrc</a>. Keep in mind that you will
+                need to provide:
+                <ul>
+                    <li>Your loan number <i>(Note: If your loan number starts with zeros, please include them when entering it.)</i></li>
+                    <li>Your email address</li>
+                </ul>
+                Types of payments you can make:
+                <ul>
+                    <li>Monthly payment</li>
+                    <li>Principal-only payment</li>
+                    <li>Escrow deposit</li>
+                    <li>Escrow shortage payment</li>
+                </ul>
+                <br />
+                <i>Note: There is no charge for this service.</i>
+            </section>
+            <br />
+            <br />
+            <section id="pay-with-quick-collect">
+                <b>Paying with Western Union® Quick Collect®</b>
+                <ol>
+                    <li>Check their <a href="https://www.westernunion.com/us/en/pay-bills.html" target="_blank">website</a> or call <a href="tel:800-325-6000">800-325-6000</a> to find your nearest location.</li>
+                    <li>Fill out a Quick Collect form and be sure to include your name and loan number.</li>
+                    <li>You’ll also need this information:<br />Pay To: Mr. Cooper<br />Code: MRCOOPER<br />State: TX</li>
+                </ol>
+
+                <i>Note: All Quick Collect transactions require cash and Western Union charges a fee for this service.</i>
+            </section>
+            <br />
+            <br />
+            <section id="pay-with-express-pay">
+                <b>Paying with MoneyGram® ExpressPayment®</b>
+                <ol>
+                    <li>Find your nearest MoneyGram agent on their website or by calling <a href="tel:800-926-9400">800-926-9400</a>.</li>
+                    <li>At their office, fill out a ExpressPayment form. Be sure to include your your name and loan number.</li>
+                    <li>When you're asked for a MoneyGram Receive Code, it's 1678.</li>
+                </ol>
+                <i>Note: A MoneyGram ExpressPayment requires cash and MoneyGram charges a fee for this service.</i>
+            </section>
+        </div>
+    </body>
 </html>
